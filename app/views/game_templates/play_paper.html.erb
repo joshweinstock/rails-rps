@@ -1,0 +1,10 @@
+<h2> We played paper! </h2>
+
+<h2> They played <%= @opponent_move %>!</h2>
+<% if @outcome == "won" %>
+<h2>We <%= @outcome %>! </h2>
+<% elsif @outcome == "lost" %>
+<h2>We <%= @outcome %>! </h2>
+<% else @outcome == "tied" %>
+<h2>We <%= @outcome %>! </h2>
+<%end%>
