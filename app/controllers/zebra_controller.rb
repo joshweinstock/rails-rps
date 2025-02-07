@@ -9,7 +9,7 @@ class ZebraController < ApplicationController
       else
         @outcome = "won"
       end
-      render({ :template => "game_templates/play_rock"})
+      render({ :template => "game_templates/rock"})
 
     end
 
@@ -23,7 +23,7 @@ class ZebraController < ApplicationController
       else
         @outcome = "lost"
       end
-      render({ :template => "game_templates/play_paper"})
+      render({ :template => "game_templates/paper"})
     end
 
     def lion
@@ -36,7 +36,7 @@ class ZebraController < ApplicationController
       else
         @outcome = "tied"
       end
-      render({ :template => "game_templates/play_scissors"})
+      render({ :template => "game_templates/scissors"})
 
     end
 
